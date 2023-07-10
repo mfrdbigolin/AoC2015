@@ -8,4 +8,6 @@
 
 std::string read_file(std::string filename);
 
+#include "utils.tcc"
+
 #endif /* !UTILS_HH  */

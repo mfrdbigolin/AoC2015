@@ -1,6 +1,8 @@
 // Copyright (C) 2023 Matheus Fernandes Bigolin <mfrdrbigolin@disroot.org>
 // SPDX-License-Identifier: MIT
 
+#include "utils.hh"
+
 #include <fstream>
 #include <ios>
 #include <iterator>
@@ -14,8 +16,8 @@ std::string read_file(std::string filename) {
     throw std::runtime_error("Unable to open " + filename);
   }
 
-  std::istreambuf_iterator<char> it{ file }, end;
-  std::string content(it, end);
+  const std::istreambuf_iterator<char> it{ file }, end;
+  const std::string content(it, end);
 
   if (!file) {
     throw std::runtime_error("Unable to read " + filename);
