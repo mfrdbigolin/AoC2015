@@ -15,5 +15,5 @@ BIN_DIR = bin
 
 CC = g++
 PPFLAGS = $(patsubst day%,-D DAY%,$(DAYS))
-CCFLAGS = -Wall -pedantic -std=c++17 -O2
-LDFLAGS = -lm
+CCFLAGS = -std=c++17 -O3 -Wall -Wextra -Wpedantic -Werror
+LDFLAGS = -lm -lcrypto -lssl

@@ -3,12 +3,12 @@
 # SPDX-License-Identifier: MIT
 
 define link_binary =
-	$(CC) $(LDFLAGS) -o $@ $^
+	$(CC) -o $@ $^ $(LDFLAGS)
 	echo $(MAKENAME) "Make: binary" $(@F) "linked ("$(^F)")"
 endef
 
 define assemble_object =
-	$(CC) $(PPFLAGS) $(CCFLAGS) -c -o $@ $<
+	$(CC) -c -o $@ $< $(CCFLAGS) $(PPFLAGS)
 	echo $(MAKENAME) "Make: object" $(@F) "assembled ("$(^F)")"
 endef
 

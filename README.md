@@ -3,18 +3,25 @@
   - SPDX-License-Identifier: MIT
   -->
 
-# *AoC2015*: My Advent of Code 2015 Solutions
+# *AoC2015*: Advent of Code 2015 C++ Solutions
 
 [![Public license](https://img.shields.io/badge/MIT_(Expat)-yellow?logo=spdx&logoColor=white)](./LICENSE)
 [![Programming Language](https://img.shields.io/badge/C%2B%2B_Language-red?logo=C%2B%2B&logoColor=white)](https://en.cppreference.com/w/cpp)
 
 My    C++     solutions    to    the     very    first    [Advent     of    Code
-2015](https://adventofcode.com/2015) (i.e., *AoC2015*) a bit out of season.
+2015](https://adventofcode.com/2015) (i.e., *AoC2015*) some years too late.
 
 When working on my solutions, I strive to make them as general as possible, that
 is, they could be adapted to solve similar problems.  Elegance, readability, and
 efficiency,  in  this  order,  are  also my  concerns,  though  secondary  after
 generality.
+
+## Dependencies
+
+Install the following libraries, if needed:
+
+* [`libcrypto` and  `libssl`](https://www.openssl.org): used to compute  the MD5
+  hash function in day four.
 
 ## Building
 
